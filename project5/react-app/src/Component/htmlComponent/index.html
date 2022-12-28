@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React App</title>
+    <style>
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .center {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 25px;
+        width: 40%;
+        margin: auto;
+        box-shadow: 5px 5px 10px grey;
+      }
+      .data {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 1rem 25px;
+        width: 40%;
+        margin: auto;
+        margin-top: 20px;
+        box-shadow: 5px 5px 10px grey;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border: 2px solid #ccc;
+        padding: 5px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body bgcolor="#000">
+    <div class="center">
+      <form ">
+        <label for="fname">Username</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+        <label for="lname">Age (Years)</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your Age" />
+        
+      </form>
+    </div>
+
+
+    <div class="data">
+      <div class="flex-container">
+        <div>Firoz (25 years old)</div>
+        <div>✅</div>
+      </div>
+      <div class="flex-container">
+        <div>Firoz (25 years old)</div>
+        <div>✅</div>
+      </div>
+      <div class="flex-container">
+        <div>Firoz (25 years old)</div>
+        <div>✅</div>
+      </div>
+      <div class="flex-container">
+        <div>Firoz (25 years old)</div>
+        <div>✅</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      #overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        cursor: pointer;
+      }
+
+      #text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 1rem;
+        color: rgb(14, 13, 13);
+        transform: translate(-50%, -50%);
+      }
+      .center {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 1rem;
+        width: 100%;
+        margin: auto;
+        box-shadow: 5px 5px 10px grey;
+        border-radius: 20px;
+      }
+      .center p {
+        padding: 20px;
+      }
+      .header {
+        color: red;
+        background: #000;
+        text-align: center;
+        margin: 2rem;
+        border-radius: 20px 20px 0px 0px;
+        margin: -16px;
+      }
+      button.okey {
+        width: 20%;
+        background-color: #000;
+        color: red;
+        padding: 5px 5px;
+        margin-left: 80%;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay" onclick="off()">
+      <div id="text">
+        <div class="center">
+          <h1 class="header">Invalid Input</h1>
+          <p>Please enter a valid name and age (non-empty valeus)</p>
+          <button class="okey"><strong>Okey</strong></button>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding: 20px">
+      <h2>Overlay with Text</h2>
+      <button onclick="on()">Turn on overlay effect</button>
+    </div>
+
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
