@@ -1,5 +1,3 @@
 import React from "react";
-const AuthContext = React.createContext({
-  isLoggedIn: false,
-});
+const AuthContext = React.createContext();
 export default AuthContext;
