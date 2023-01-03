@@ -6,7 +6,7 @@ import "./App.css";
 import AddMovie from "./components/AddMovie";
 
 function App() {
-  const link = "https://swapi.dev/api/films";
+  // const link = "https://swapi.dev/api/films";
   const fireBaseUrl = `https://react-http-102d4-default-rtdb.asia-southeast1.firebasedatabase.app/`;
 
   const [movies, setMovies] = useState([]);
