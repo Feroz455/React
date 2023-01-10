@@ -12,6 +12,7 @@ const Auth = () => {
     event.preventDefault();
     dispatch(authActions.login());
   };
+
   return (
     <main className={classes.auth}>
       <section>
